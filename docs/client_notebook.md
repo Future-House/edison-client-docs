@@ -12,11 +12,11 @@ jupyter:
     name: python3
 ---
 
-# FutureHouse platform client usage example
+# Edison platform client usage example
 
 ```python
-from futurehouse_client import FutureHouseClient, JobNames
-from futurehouse_client.models import (
+from edison_client import EdisonClient, JobNames
+from edison_client.models import (
     RuntimeConfig,
     TaskRequest,
 )
@@ -29,16 +29,16 @@ Here we use `auth_type=AuthType.API_KEY` to authenticate with the platform.
 Please log in to the platform and go to your user settings to get your API key.
 
 ```python
-client = FutureHouseClient(
+client = EdisonClient(
     api_key="your-api-key",
 )
 ```
 
-## Submit a task to an available futurehouse job
+## Submit a task to an available Edison job
 
 
-In the futurehouse platform, we refer to the deployed combination of agent and environment as a `job`.
-Submitting a task to a futurehouse job is done by calling the `create_task` method, which receives a `TaskRequest` object.
+In the edison platform, we refer to the deployed combination of agent and environment as a `job`.
+Submitting a task to an edison job is done by calling the `create_task` method, which receives a `TaskRequest` object.
 
 For convenience, one can use the `run_tasks_until_done` method, which submits the task, waits for the task to be completed, and returns a list of `TaskResponse` objects.
 
