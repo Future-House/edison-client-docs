@@ -30,16 +30,13 @@ uv pip install edison-client
 
 ```python
 from edison_client import EdisonClient, JobNames
-from pathlib import Path
-from aviary.core import DummyEnv
-import ldp
 
 client = EdisonClient(
     api_key="your_api_key",
 )
 
 task_data = {
-    "name": JobNames.CROW,
+    "name": JobNames.LITERATURE,
     "query": "Which neglected diseases had a treatment developed by artificial intelligence?",
 }
 
@@ -94,7 +91,7 @@ client = EdisonClient(
 )
 
 task_data = {
-    "name": JobNames.OWL,
+    "name": JobNames.PRECEDENT,
     "query": "Has anyone tested therapeutic exerkines in humans or NHPs?",
 }
 
@@ -116,7 +113,7 @@ async def main():
     )
 
     task_data = {
-        "name": JobNames.OWL,
+        "name": JobNames.PRECEDENT,
         "query": "Has anyone tested therapeutic exerkines in humans or NHPs?",
     }
 
@@ -143,11 +140,11 @@ async def main():
     )
 
     task_data = [{
-        "name": JobNames.OWL,
+        "name": JobNames.PRECEDENT,
         "query": "Has anyone tested therapeutic exerkines in humans or NHPs?",
     },
     {
-        "name": JobNames.CROW,
+        "name": JobNames.LITERATURE,
         "query": "Are there any clinically validated therapeutic exerkines for humans?",
     }
     ]
@@ -184,7 +181,7 @@ client = EdisonClient(
 
 task_response = client.run_tasks_until_done(
     TaskRequest(
-        name=JobNames.OWL,
+        name=JobNames.PRECEDENT,
         query="Has anyone tested therapeutic exerkines in humans or NHPs?",
     )
 )
@@ -192,7 +189,7 @@ task_response = client.run_tasks_until_done(
 print(task_response.answer)
 ```
 
-A `TaskResponse` will be returned from using our agents. For Owl, Crow, and Falcon, we default to a subclass, `PQATaskResponse` which has some key attributes:
+A `TaskResponse` will be returned from using our agents. For `LITERATURE` and `PRECEDENT`, we default to a subclass, `PQATaskResponse` which has some key attributes:
 
 | Field                 | Type | Description                                                                     |
 | --------------------- | ---- | ------------------------------------------------------------------------------- |
@@ -200,7 +197,7 @@ A `TaskResponse` will be returned from using our agents. For Owl, Crow, and Falc
 | formatted_answer      | str  | Specially formatted answer with references.                                     |
 | has_successful_answer | bool | Flag for whether the agent was able to find a good answer to your query or not. |
 
-If using the `verbose` setting, much more data can be pulled down from your `TaskResponse`, which will exist across all agents (not just Owl, Crow, and Falcon).
+If using the `verbose` setting, much more data can be pulled down from your `TaskResponse`, which will exist across all agents.
 
 ```python
 from edison_client import EdisonClient, JobNames
@@ -212,7 +209,7 @@ client = EdisonClient(
 
 task_response = client.run_tasks_until_done(
     TaskRequest(
-        name=JobNames.OWL,
+        name=JobNames.PRECEDENT,
         query="Has anyone tested therapeutic exerkines in humans or NHPs?",
     ),
     verbose=True,
@@ -242,13 +239,13 @@ client = EdisonClient(
     api_key="your_api_key",
 )
 
-task_data = {"name": JobNames.CROW, "query": "How many species of birds are there?"}
+task_data = {"name": JobNames.LITERATURE, "query": "How many species of birds are there?"}
 
 task_id = client.create_task(task_data)
 
 continued_task_data = {
-    "name": JobNames.CROW,
-    "query": "From the previous answer, specifically,how many species of crows are there?",
+    "name": JobNames.LITERATURE,
+    "query": "From the previous answer, specifically, how many species of crows are there?",
     "runtime_config": {"continued_job_id": task_id},
 }
 
@@ -266,7 +263,7 @@ client = EdisonClient(
     api_key="your_api_key",
 )
 
-task_data = {"name": JobNames.CROW, "query": "How many species of birds are there?"}
+task_data = {"name": JobNames.LITERATURE, "query": "How many species of birds are there?"}
 
 task_id = client.create_task(task_data)
 
