@@ -4,13 +4,13 @@ requires = ["setuptools>=64", "setuptools_scm>=8"]
 
 [dependency-groups]
 dev = [
-    "futurehouse-client-docs[dev]",
-    "futurehouse-client[dev]",
+    "edison-client-docs[dev]",
+    "edison-client[dev]",
 ]
 
 [project]
 authors = [
-    {email = "hello@futurehouse.org", name = "FutureHouse technical staff"},
+    {email = "hello@futurehouse.org", name = "Edison Scientific technical staff"},
 ]
 # Full list: https://pypi.python.org/pypi?%3Aaction=list_classifiers
 classifiers = [
@@ -22,20 +22,20 @@ classifiers = [
     "Programming Language :: Python",
 ]
 dependencies = [
-    "futurehouse-client",
+    "edison-client",
     "ipykernel",
     "python-dotenv",
 ]
-description = "Documentation and tutorials for futurehouse-client, a client for interacting with endpoints of the FutureHouse platform."
+description = "Documentation and tutorials for edison-client, a client for interacting with endpoints of the FutureHouse platform."
 dynamic = ["version"]
-keywords = ["futurehouse", "platform"]
+keywords = ["edison", "edisonscientific", "platform"]
 license = {file = "LICENSE"}
 maintainers = [
     {email = "jamesbraza@gmail.com", name = "James Braza"},
     {email = "michael.skarlinski@gmail.com", name = "Michael Skarlinski"},
     {email = "white.d.andrew@gmail.com", name = "Andrew White"},
 ]
-name = "futurehouse-client-docs"
+name = "edison-client-docs"
 readme = "README.md"
 requires-python = ">=3.11"
 
@@ -56,8 +56,8 @@ typing = [
 ]
 
 [project.urls]
-issues = "https://github.com/Future-House/futurehouse-client-docs/issues"
-repository = "https://github.com/Future-House/futurehouse-client-docs"
+issues = "https://github.com/Future-House/edison-client-docs/issues"
+repository = "https://github.com/Future-House/edison-client-docs"
 
 [tool.black]
 preview = true
@@ -223,7 +223,7 @@ min-similarity-lines = 12
 [tool.pytest.ini_options]
 # Add the specified OPTS to the set of command line arguments as if they had been
 # specified by the user.
-addopts = "--typeguard-packages=futurehouse-client-docs"
+addopts = "--typeguard-packages=edison-client-docs"
 # set how loops are scoped to avoid https://github.com/BerriAI/litellm/issues/5854
 asyncio_default_fixture_loop_scope = "session"
 # Sets a list of filters and actions that should be taken for matched warnings.

@@ -83,4 +83,4 @@ repos:
       - id: mypy
         args: [--pretty, --ignore-missing-imports]
         additional_dependencies:
-          - crow-client
+          - edison-client
