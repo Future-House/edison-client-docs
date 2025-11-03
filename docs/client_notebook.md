@@ -15,22 +15,28 @@ jupyter:
 # Edison platform client usage example
 
 ```python
-from edison_client import EdisonClient, JobNames
-from edison_client.models import (
-    RuntimeConfig,
+import os
+
+from edison_client import (
+    EdisonClient,
+    JobNames,
     TaskRequest,
 )
+from edison_client.models import RuntimeConfig
 from ldp.agent import AgentConfig
 ```
 
 ## Client instantiation
 
-Here we use `auth_type=AuthType.API_KEY` to authenticate with the platform.
+Here we instantiate an Edison client and authenticate our access to the platform.
+By default, the client will use the `EDISON_PLATFORM_API_KEY` environment variable to authenticate.
+The option `api_key` can be used to pass your API key.
+
 Please log in to the platform and go to your user settings to get your API key.
 
 ```python
 client = EdisonClient(
-    api_key="your-api-key",
+    api_key=os.getenv("EDISON_PLATFORM_API_KEY", "your-api-key"),
 )
 ```
 
@@ -44,7 +50,7 @@ For convenience, one can use the `run_tasks_until_done` method, which submits th
 
 ```python
 task_data = TaskRequest(
-    name=JobNames.from_string("crow"),
+    name=JobNames.from_string("literature"),
     query="What is the molecule known to have the greatest solubility in water?",
 )
 responses = client.run_tasks_until_done(task_data)
@@ -67,7 +73,7 @@ agent = AgentConfig(
     },
 )
 task_data = TaskRequest(
-    name=JobNames.CROW,
+    name=JobNames.LITERATURE,
     query="How many moons does earth have?",
     runtime_config=RuntimeConfig(agent=agent, max_steps=10),
 )
@@ -87,7 +93,7 @@ Notice that `run_tasks_until_done` accepts both a `TaskRequest` object and a dic
 
 ```python
 task_data = TaskRequest(
-    name=JobNames.CROW, query="How many species of birds are there?"
+    name=JobNames.LITERATURE, query="How many species of birds are there?"
 )
 
 responses = client.run_tasks_until_done(task_data)
@@ -99,9 +105,9 @@ print(f"First job answer: \n{task_response.formatted_answer}")
 
 ```python
 continued_job_data = {
-    "name": JobNames.CROW,
+    "name": JobNames.LITERATURE,
     "query": (
-        "From the previous answer, specifically,how many species of crows are there?"
+        "From the previous answer, specifically, how many species of crows are there?"
     ),
     "runtime_config": {"continued_job_id": task_response.task_id},
 }

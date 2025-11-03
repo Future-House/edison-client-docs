@@ -78,10 +78,10 @@ Aiming to make the submission of tasks as simple as possible, we have created a 
 The available supported jobs are:
 | Alias | Job Name | Task type | Description |
 | --- | --- | --- | --- |
-| `JobNames.LITERATURE`    | `job-futurehouse-paperqa2`      | Literature Search      | Ask a question of scientific data sources, and receive a high-accuracy, cited response. Built with [PaperQA2](https://github.com/Future-House/paper-qa). |
-| `JobNames.ANALYSIS`  | `job-futurehouse-data-analysis-crow-high` | Data Analysis      | Turn biological datasets into detailed analyses answering your research questions.                                                       |
-| `JobNames.PRECEDENT`     | `job-futurehouse-hasanyone`     | Precedent Search | Formerly known as HasAnyone, query if anyone has ever done something in science.                                                                         |
-| `JobNames.MOLECULES` | `job-futurehouse-phoenix`       | Chemistry Tasks  | A new iteration of ChemCrow, Phoenix uses cheminformatics tools to do chemistry. Good for planning synthesis and designing new molecules.  
+| `JobNames.LITERATURE` | `job-futurehouse-paperqa2` | Literature Search | Ask a question of scientific data sources, and receive a high-accuracy, cited response. Built with [PaperQA2](https://github.com/Future-House/paper-qa). |
+| `JobNames.ANALYSIS` | `job-futurehouse-data-analysis-crow-high` | Data Analysis | Turn biological datasets into detailed analyses answering your research questions. |
+| `JobNames.PRECEDENT` | `job-futurehouse-hasanyone` | Precedent Search | Formerly known as HasAnyone, query if anyone has ever done something in science. |
+| `JobNames.MOLECULES` | `job-futurehouse-phoenix` | Chemistry Tasks | A new iteration of ChemCrow, Phoenix uses cheminformatics tools to do chemistry. Good for planning synthesis and designing new molecules.
 | `JobNames.DUMMY` | `job-futurehouse-dummy` | Dummy Task | This is a dummy task. Mainly for testing purposes. |
 
 Using `JobNames`, the task submission looks like this:
@@ -166,7 +166,7 @@ if __name__ == "__main__":
 `TaskRequest` can also be used to submit jobs and it has the following fields:
 
 | Field          | Type          | Description                                                                                                               |
-| -------------- | ------------- | --------------------------------------------------------------------------------------------------------------------------|
+| -------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | id             | UUID          | Optional job identifier. A UUID will be generated if not provided                                                         |
 | name           | str           | Name of the job to execute eg. `job-futurehouse-paperqa2`, or using the `JobNames` for convenience: `JobNames.LITERATURE` |
 | query          | str           | Query or task to be executed by the job                                                                                   |
