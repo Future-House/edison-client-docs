@@ -73,13 +73,13 @@ In the Edison platform, we define the deployed combination of an agent and an en
 Aiming to make the submission of tasks as simple as possible, we have created a `JobNames` `enum` that contains the available task types.
 
 The available supported jobs are:
-| Alias | Job Name | Task type | Description |
-| --- | --- | --- | --- |
-| `JobNames.LITERATURE` | `job-futurehouse-paperqa2` | Literature Search | Ask a question of scientific data sources, and receive a high-accuracy, cited response. Built with [PaperQA2](https://github.com/Future-House/paper-qa). |
-| `JobNames.ANALYSIS` | `job-futurehouse-data-analysis-crow-high` | Data Analysis | Turn biological datasets into detailed analyses answering your research questions. |
-| `JobNames.PRECEDENT` | `job-futurehouse-hasanyone` | Precedent Search | Formerly known as HasAnyone, query if anyone has ever done something in science. |
-| `JobNames.MOLECULES` | `job-futurehouse-phoenix` | Chemistry Tasks | A new iteration of ChemCrow, Phoenix uses cheminformatics tools to do chemistry. Good for planning synthesis and designing new molecules.
-| `JobNames.DUMMY` | `job-futurehouse-dummy` | Dummy Task | This is a dummy task. Mainly for testing purposes. |
+| Alias | Task type | Description |
+| --- | --- | --- |
+| `JobNames.LITERATURE` | Literature Search | Ask a question of scientific data sources, and receive a high-accuracy, cited response. Built with [PaperQA3](https://github.com/Future-House/paper-qa). |
+| `JobNames.ANALYSIS` | Data Analysis | Turn biological datasets into detailed analyses answering your research questions. |
+| `JobNames.PRECEDENT` | Precedent Search | Formerly known as HasAnyone, query if anyone has ever done something in science. |
+| `JobNames.MOLECULES` | Chemistry Tasks | A new iteration of ChemCrow, Phoenix uses cheminformatics tools to do chemistry. Good for planning synthesis and designing new molecules.
+| `JobNames.DUMMY` | Dummy Task | This is a dummy task. Mainly for testing purposes. |
 
 Using `JobNames`, the task submission looks like this:
 
