@@ -6,7 +6,7 @@
 
 <!-- [![tests](https://github.com/Future-House/edison-client-docs/actions/workflows/lint-and-tests.yaml/badge.svg)](https://github.com/Future-House/edison-client-docs) -->
 
-Documentation and tutorials for edison-client, a client for interacting with endpoints of the FutureHouse platform.
+Documentation and tutorials for edison-client, a client for interacting with endpoints of the Edison platform.
 
 <!--TOC-->
 
