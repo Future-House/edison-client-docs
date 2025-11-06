@@ -64,7 +64,7 @@ client = EdisonClient(
 
 ## Authentication
 
-In order to use the `EdisonClient`, you need to authenticate yourself. Authentication is done by providing an API key, which can be obtained directly from your [profile page in the Edison platform](https://platform.futurehouse.org/profile).
+In order to use the `EdisonClient`, you need to authenticate yourself. Authentication is done by providing an API key, which can be obtained directly from your [profile page in the Edison platform](https://platform.edisonscientific.com/profile).
 
 ## Simple task running
 
