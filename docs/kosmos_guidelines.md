@@ -11,22 +11,22 @@ The research objective should provide sufficient scientific and experimental con
 Here are some examples of ways to improve research objective prompts:
 
 ### Inappropriate research objectives‍
-• Which of these tissue have a lower ECM pathway expression score?
+- Which of these tissue have a lower ECM pathway expression score?
 
-• List all the genes that are differentially expressed (p < 0.05) between the 'control' and 'drought' RNA-seq samples.
+- List all the genes that are differentially expressed (p < 0.05) between the 'control' and 'drought' RNA-seq samples.
 
-• How is graphene used for water desalination? Suggest cross-linking agents that is compatible with our method.
+- How is graphene used for water desalination? Suggest cross-linking agents that is compatible with our method.
 
-• Analyze the attached county-level public health dataset. Does ice cream consumption correlate with asthma rates?
+- Analyze the attached county-level public health dataset. Does ice cream consumption correlate with asthma rates?
 
 ### Good research objectives
-• Compare ECM pathway expression levels in the melanoma tissue samples. Propose hypotheses on mechanisms driving these changes and downstream functional consequences.
+- Compare ECM pathway expression levels in the melanoma tissue samples. Propose hypotheses on mechanisms driving these changes and downstream functional consequences.
 
-• Analyze the RNA-seq dataset provided from Arabidopsis thaliana leaves, comparing 'control' (well-watered) to 'drought' (water withholding) samples across a time course. Identify the ****key regulatory pathways that mediate acclimation. Are there any transcription factor(s) outside the well-known ABA pathway that may be a master regulator of this response?
+- Analyze the RNA-seq dataset provided from Arabidopsis thaliana leaves, comparing 'control' (well-watered) to 'drought' (water withholding) samples across a time course. Identify the ****key regulatory pathways that mediate acclimation. Are there any transcription factor(s) outside the well-known ABA pathway that may be a master regulator of this response?
 
-• We are investigating the use of laminated graphene oxide (GO) membranes for water desalination. A major problem is that these membranes swell and lose selectivity when hydrated. I have attached our recent experimental results showing interlayer spacing vs. salt rejection. Identify the top 3-5 most promising cross-linking agents (e.g., diamines, metal ions) that have been proven to control GO membrane swelling and propose which one would be most compatible with our current layer-by-layer fabrication method.
+- We are investigating the use of laminated graphene oxide (GO) membranes for water desalination. A major problem is that these membranes swell and lose selectivity when hydrated. I have attached our recent experimental results showing interlayer spacing vs. salt rejection. Identify the top 3-5 most promising cross-linking agents (e.g., diamines, metal ions) that have been proven to control GO membrane swelling and propose which one would be most compatible with our current layer-by-layer fabrication method.
 
-• The provided county-level public health dataset includes data on disease prevalence, environmental factors, and socio-demographics. Our central hypothesis is that counties with higher air pollution (PM2.5) will have increased asthma prevalence, but we suspect this effect is strongest in low-income communities. Build a regression model to test this hypothesis. Control for confounding variables: this must include population density, average age, and regional differences in pollen, so please treat these as covariates. Propose a follow-up analysis to explore the specific impact of pollen vs. PM2.5.
+- The provided county-level public health dataset includes data on disease prevalence, environmental factors, and socio-demographics. Our central hypothesis is that counties with higher air pollution (PM2.5) will have increased asthma prevalence, but we suspect this effect is strongest in low-income communities. Build a regression model to test this hypothesis. Control for confounding variables: this must include population density, average age, and regional differences in pollen, so please treat these as covariates. Propose a follow-up analysis to explore the specific impact of pollen vs. PM2.5.
 
 ## 3. Provide sufficient context in the data description.
 Ensure that Kosmos has the necessary context about the data provided. For example, if providing a table, ensure all column names are intuitively labeled, or provide an additional sheet that describes what each column name means in more detail. A scientific collaborator in a relevant field should be able to interpret the data with the provided research objective without seeking further clarification.
