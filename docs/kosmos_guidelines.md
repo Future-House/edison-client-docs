@@ -11,11 +11,11 @@ The research objective should provide sufficient scientific and experimental con
 Here are some examples of ways to improve research objective prompts:
 
 ### Inappropriate research objectives‍
-- Which of these tissue have a lower ECM pathway expression score?
+- Which of these tissues have a lower ECM pathway expression score?
 
 - List all the genes that are differentially expressed (p < 0.05) between the 'control' and 'drought' RNA-seq samples.
 
-- How is graphene used for water desalination? Suggest cross-linking agents that is compatible with our method.
+- How is graphene used for water desalination? Suggest cross-linking agents that are compatible with our method.
 
 - Analyze the attached county-level public health dataset. Does ice cream consumption correlate with asthma rates?
 
@@ -32,7 +32,7 @@ Here are some examples of ways to improve research objective prompts:
 Ensure that Kosmos has the necessary context about the data provided. For example, if providing a table, ensure all column names are intuitively labeled, or provide an additional sheet that describes what each column name means in more detail. A scientific collaborator in a relevant field should be able to interpret the data with the provided research objective without seeking further clarification.
 
 ## 4. Provide complex data.
-While Kosmos can operate on simple data (e.g. a csv containing a list of gene names), Kosmos make the most interesting discoveries when given complex high dimensional data, such as scRNA-seq, proteomics, or environmental parameters across multiple samples or timepoints. You can also provide multiple datasets that are relevant to the research objective. There is no limit on the number of files you provide Kosmos as long as total uncompressed size of your dataset is under 5GB. Kosmos is capable of managing workspaces with 100s of files.
+While Kosmos can operate on simple data (e.g. a csv containing a list of gene names), Kosmos makes the most interesting discoveries when given complex high dimensional data, such as scRNA-seq, proteomics, or environmental parameters across multiple samples or timepoints. You can also provide multiple datasets that are relevant to the research objective. There is no limit on the number of files you provide Kosmos as long as total uncompressed size of your dataset is under 5GB. Kosmos is capable of managing workspaces with 100s of files.
 
 ## 5. Provide properly labeled and processed data.
 The dataset is used as a starting point for exploratory analysis. While Kosmos can perform quality control steps and is able to correct for artifacts such as batch effects, Kosmos is most powerful when operating on high quality, processed data. We do not recommend getting Kosmos to process your data such as mapping of raw sequencing files or annotating raw imaging data.
