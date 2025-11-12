@@ -10,7 +10,7 @@ The research objective should provide sufficient scientific and experimental con
 
 Here are some examples of ways to improve research objective prompts:
 
-### Inappropriate research objectives‍
+### Inappropriate research objectives
 - Which of these tissues have a lower ECM pathway expression score?
 
 - List all the genes that are differentially expressed (p < 0.05) between the 'control' and 'drought' RNA-seq samples.
@@ -22,7 +22,7 @@ Here are some examples of ways to improve research objective prompts:
 ### Good research objectives
 - Compare ECM pathway expression levels in the melanoma tissue samples. Propose hypotheses on mechanisms driving these changes and downstream functional consequences.
 
-- Analyze the RNA-seq dataset provided from Arabidopsis thaliana leaves, comparing 'control' (well-watered) to 'drought' (water withholding) samples across a time course. Identify the ****key regulatory pathways that mediate acclimation. Are there any transcription factor(s) outside the well-known ABA pathway that may be a master regulator of this response?
+- Analyze the RNA-seq dataset provided from Arabidopsis thaliana leaves, comparing 'control' (well-watered) to 'drought' (water withholding) samples across a time course. Identify the key regulatory pathways that mediate acclimation. Are there any transcription factor(s) outside the well-known ABA pathway that may be a master regulator of this response?
 
 - We are investigating the use of laminated graphene oxide (GO) membranes for water desalination. A major problem is that these membranes swell and lose selectivity when hydrated. I have attached our recent experimental results showing interlayer spacing vs. salt rejection. Identify the top 3-5 most promising cross-linking agents (e.g., diamines, metal ions) that have been proven to control GO membrane swelling and propose which one would be most compatible with our current layer-by-layer fabrication method.
 
