@@ -30,7 +30,7 @@ Here are some examples of ways to improve Phoenix queries:
 | Tell me about aspirin. | What are the ADMET properties (HIA_Hou, BBB_Martins, and AMES) for aspirin? Also, what are its GHS classification and LD50 value? |
 | Modify quercetin to make it more soluble in water. | Suggest three different substitution modifications to quercetin to make its aqueous solubility (logS) higher. Show me the suggested molecules in your final answer and base your answer in evidence from the literature. |
 | How do I make aspirin? | Design a retrosynthesis route for the target molecule with SMILES `CC(=O)OC1=CC=CC=C1C(=O)O`. Please identify starting materials and propose reaction steps. |
-| Can you synthesize caffeine? | Propose a synthesis route for caffeine (SMILES: CN1C=NC2=C1C(=O)N(C(=O)N2C)C), including retrosynthetic analysism reactants pricing, and reaction conditions where possible. |
+| Can you synthesize caffeine? | Propose a synthesis route for caffeine (SMILES: CN1C=NC2=C1C(=O)N(C(=O)N2C)C), including retrosynthetic analysis, reactants pricing, and reaction conditions where possible. |
 | What happens if I mix ethanol and acetic acid? | Predict the product of the reaction of ethanol and acetic acid with SMILES: `CCO.CC(=O)O>>`. Calculate the reaction enthalpy. |
 | What drugs treat diabetes? | Find small molecule binders for the insulin receptor (INSR gene symbol). Propose up to 10 candidates and analyze their drug-likeness using QED scores. |
 | Is CC(=O)OC1=CC=CC=C1C(=O)O safe? | Perform a safety assessment for the molecule with SMILES `CC(=O)OC1=CC=CC=C1C(=O)O`, including GHS classification, LD50 value, chemical weapons screening, and toxicity predictions (AMES, ClinTox). |
@@ -38,4 +38,4 @@ Here are some examples of ways to improve Phoenix queries:
 | What's the latest on green chemistry? | Using literature search, find recent advances in green chemistry methods for esterification reactions. Focus on catalysts and reaction conditions that minimize environmental impact. |
 
 ## 8. Iterate.
-Take some time to write your first Phoenix query so you can avoid the common caveats listed above. However, trial and error will be your best guide to develop a deep intuition on how to best use the system. Start with familiar molecules or reactions. While Phoenix can handle complex multi-step workflows, begin with simpler queries for faster results and quicker iteration can help you refine your queries and get the most out of Phoenix.
+Take some time to write your first Phoenix query so you can avoid the common pitfalls listed above. However, trial and error will be your best guide to develop a deep intuition on how to best use the system. Start with familiar molecules or reactions. While Phoenix can handle complex multi-step workflows, begin with simpler queries for faster results and quicker iteration can help you refine your queries and get the most out of Phoenix.
