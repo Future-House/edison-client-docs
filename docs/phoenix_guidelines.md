@@ -31,7 +31,7 @@ Here are some examples of ways to improve Phoenix queries:
 | Modify quercetin to make it more soluble in water. | Suggest three different substitution modifications to quercetin to make its aqueous solubility (logS) higher. Show me the suggested molecules in your final answer and base your answer in evidence from the literature. |
 | How do I make aspirin? | Design a retrosynthesis route for the target molecule with SMILES `CC(=O)OC1=CC=CC=C1C(=O)O`. Please identify starting materials and propose reaction steps. |
 | Can you synthesize caffeine? | Propose a synthesis route for caffeine, including retrosynthetic analysis, reactants pricing, and reaction conditions where possible. |
-| What happens if I mix ethanol and acetic acid? | Predict the product of the reaction of ethanol and acetic acid with SMILES: `CCO.CC(=O)O>>`. Calculate the reaction enthalpy. |
+| What happens if I mix ethanol and acetic acid? | Predict the product of the reaction of ethanol and acetic acid with reaction SMILES: `CCO.CC(=O)O>>`. Calculate the reaction enthalpy. |
 | What drugs treat diabetes? | Propose small molecule binders for the insulin receptor (INSR gene symbol). Propose up to 10 candidates and analyze their drug-likeness using QED scores. |
 | Is CC(=O)OC1=CC=CC=C1C(=O)O safe? | Perform a safety assessment for the molecule with SMILES `CC(=O)OC1=CC=CC=C1C(=O)O`, including GHS classification, LD50 value, chemical weapons screening, and toxicity predictions. |
 | Find similar molecules to `CC(=O)OC1=CC=CC=C1C(=O)O`. | Search the ChEMBL database for molecules similar to aspirin (SMILES: `CC(=O)OC1=CC=CC=C1C(=O)O`) for drug repurposing. Return the top 10 candidates with their development phases and bioactivity data. |
