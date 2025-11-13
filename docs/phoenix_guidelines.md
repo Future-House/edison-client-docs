@@ -32,7 +32,7 @@ Here are some examples of ways to improve Phoenix queries:
 | How do I make aspirin? | Design a retrosynthesis route for the target molecule with SMILES `CC(=O)OC1=CC=CC=C1C(=O)O`. Please identify starting materials and propose reaction steps. |
 | Can you synthesize caffeine? | Propose a synthesis route for caffeine, including retrosynthetic analysis, reactants pricing, and reaction conditions where possible. |
 | What happens if I mix ethanol and acetic acid? | Predict the product of the reaction of ethanol and acetic acid with SMILES: `CCO.CC(=O)O>>`. Calculate the reaction enthalpy. |
-| What drugs treat diabetes? | Find small molecule binders for the insulin receptor (INSR gene symbol). Propose up to 10 candidates and analyze their drug-likeness using QED scores. |
+| What drugs treat diabetes? | Propose small molecule binders for the insulin receptor (INSR gene symbol). Propose up to 10 candidates and analyze their drug-likeness using QED scores. |
 | Is CC(=O)OC1=CC=CC=C1C(=O)O safe? | Perform a safety assessment for the molecule with SMILES `CC(=O)OC1=CC=CC=C1C(=O)O`, including GHS classification, LD50 value, chemical weapons screening, and toxicity predictions (AMES, ClinTox). |
 | Find similar molecules to `CC(=O)OC1=CC=CC=C1C(=O)O`. | Search the ChEMBL database for molecules similar to aspirin (SMILES: `CC(=O)OC1=CC=CC=C1C(=O)O`) for drug repurposing. Return the top 10 candidates with their development phases and bioactivity data. |
 | What's the latest on green chemistry? | Using literature search, find recent advances in green chemistry methods for esterification reactions. Focus on catalysts and reaction conditions that minimize environmental impact. |
