@@ -9,7 +9,7 @@ When asking about molecules, provide SMILES strings, CAS numbers, IUPAC names, o
 Clearly state what you need from Phoenix. It can be a synthesis route, molecular property prediction, safety assessment, literature-backed answer, or a combination of these. The more specific you are about the outputs you need, the better Phoenix can select appropriate tools and provide actionable results.
 
 ## 3. Use proper chemical terminology and notation.
-Employ standard chemical nomenclature and notation. For example, use SMILES representation for reactions: `reactants>reagents>products`. Use standard property names (e.g., ADMET properties like HIA_Hou, BBB_Martins, AMES) when requesting specific molecular properties. This helps Phoenix understand your intent and select the most appropriate computational tools.
+Employ standard chemical nomenclature and notation. For example, use SMILES representation for reactions: `reactants>reagents>products`. Use standard property names (e.g., ADMET properties) when requesting specific molecular properties. This helps Phoenix understand your intent and select the most appropriate computational tools.
 
 ## 4. Break down complex queries.
 Structure multi-part questions logically so Phoenix can create an effective execution plan. While Phoenix can handle multi-step queries and longer workflows, clearly organizing your query helps ensure all components are addressed systematically.
