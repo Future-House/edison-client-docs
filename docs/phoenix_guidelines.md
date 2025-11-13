@@ -1,6 +1,6 @@
 # Best Practices for Interacting with Phoenix
 
-Phoenix is a chemistry-focused discovery agent. To get the most out of each Phoenix run, follow these guidelines for formulating effective queries:
+Phoenix is a chemistry-focused scientific agent. To get the most out of each Phoenix run, follow these guidelines for formulating effective queries:
 
 ## 1. Be specific about molecular inputs.
 When asking about molecules, provide SMILES strings, CAS numbers, IUPAC names, or molecular formulas explicitly. Phoenix can work with multiple representation types, but being explicit helps ensure accurate results. A chemist familiar with your field should be able to unambiguously identify the molecule(s) you're asking about.
