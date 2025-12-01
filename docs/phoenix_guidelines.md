@@ -1,6 +1,6 @@
-# Best Practices for Interacting with Phoenix
+# Best Practices for Interacting with Edison Molecules
 
-Phoenix is a chemistry-focused scientific agent. To get the most out of each Phoenix run, follow these guidelines for formulating effective queries:
+Edison Molecules is a chemistry-focused scientific agent. To get the most out of each Edison Molecules run, follow these guidelines for formulating effective queries:
 
 ## 1. Be specific about molecular inputs.
 When asking about molecules, provide explicit identifiers such as:
@@ -8,7 +8,7 @@ When asking about molecules, provide explicit identifiers such as:
 - CAS numbers
 - IUPAC names
 
-Phoenix can handle multiple representations, but being explicit reduces ambiguity. A chemist familiar with your field should be able to unambiguously identify the molecule(s) from your query.
+Edison Molecules can handle multiple representations, but being explicit reduces ambiguity. A chemist familiar with your field should be able to unambiguously identify the molecule(s) from your query.
 
 | Insufficient queries | More detailed queries |
 |---------------------|----------------------|
@@ -17,7 +17,7 @@ Phoenix can handle multiple representations, but being explicit reduces ambiguit
 | Find compounds to be used as painkillers. | Search for molecules similar to acetaminophen (SMILES: `CC(=O)NC1=CC=C(C=C1)O`) in the ChEMBL database. |
 
 ## 2. Specify desired outputs clearly.
-Clearly state what you need from Phoenix. It can be a synthesis route, molecular property prediction, safety assessment, literature-backed answer, or a combination of these. The more specific you are about the outputs you need, the better Phoenix can select appropriate tools and provide actionable results.
+Clearly state what you need from Edison Molecules. It can be a synthesis route, molecular property prediction, safety assessment, literature-backed answer, or a combination of these. The more specific you are about the outputs you need, the better Edison Molecules can select appropriate tools and provide actionable results.
 
 | Insufficient queries | More detailed queries |
 |---------------------|----------------------|
@@ -26,7 +26,7 @@ Clearly state what you need from Phoenix. It can be a synthesis route, molecular
 | Can you help me make aspirin? | I need a synthesis route, ADMET property predictions, and a safety assessment for the target molecule with SMILES `CC(=O)OC1=CC=CC=C1C(=O)O`. |
 
 ## 3. Use proper chemical terminology and notation.
-Employ standard chemical nomenclature and notation. For example, use SMILES representation for reactions: `reactants>reagents>products`. Use standard property names (e.g., ADMET properties) when requesting specific molecular properties. This helps Phoenix understand your intent and select the most appropriate computational tools.
+Employ standard chemical nomenclature and notation. For example, use SMILES representation for reactions: `reactants>reagents>products`. Use standard property names (e.g., ADMET properties) when requesting specific molecular properties. This helps Edison Molecules understand your intent and select the most appropriate computational tools.
 
 | Insufficient queries | More detailed queries |
 |---------------------|----------------------|
@@ -35,7 +35,7 @@ Employ standard chemical nomenclature and notation. For example, use SMILES repr
 | Check the drug properties of quercetin. | Calculate ADMET properties (specifically human intestinal absorption, blood-brain barrier permeability, and cytochrome P450 inhibition) for the molecule with SMILES `C1=CC(=C(C=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O)O`. |
 
 ## 4. Break down complex queries.
-Structure multi-part questions logically so Phoenix can create an effective execution plan. While Phoenix can handle multi-step queries and longer workflows, clearly organizing your query helps ensure all components are addressed systematically.
+Structure multi-part questions logically so Edison Molecules can create an effective execution plan. While Edison Molecules can handle multi-step queries and longer workflows, clearly organizing your query helps ensure all components are addressed systematically.
 
 | Insufficient queries | More detailed queries |
 |---------------------|----------------------|
@@ -44,14 +44,14 @@ Structure multi-part questions logically so Phoenix can create an effective exec
 | Find drugs for diabetes, check if they work, and make new ones. | (1) Search ChEMBL for approved diabetes drugs targeting INSR. (2) Analyze their binding affinities and ADMET properties. (3) Propose 5 novel small molecule candidates with improved properties. |
 
 ## 5. Provide context when relevant.
-Include background information about your use case (e.g., "for drug development" or "for a research synthesis") to help Phoenix select appropriate tools and safety considerations. Context about your constraints, goals, or specific requirements enables Phoenix to provide more targeted and useful responses.
+Include background information about your use case (e.g., "for drug development" or "for a research synthesis") to help Edison Molecules select appropriate tools and safety considerations. Context about your constraints, goals, or specific requirements enables Edison Molecules to provide more targeted and useful responses.
 
 | Insufficient queries | More detailed queries |
 |---------------------|----------------------|
 | Find similar molecules to `CC(=O)OC1=CC=CC=C1C(=O)O`. | Search the ChEMBL database for molecules similar to aspirin (SMILES: `CC(=O)OC1=CC=CC=C1C(=O)O`) for drug repurposing. Return the top 10 candidates with their development phases and bioactivity data. |
 
 ## 6. Request specific properties or analyses.
-Instead of asking vaguely about a molecule, specify what you need. For example, request specific ADMET properties, synthetic accessibility scores, solubility predictions, or toxicity data. This allows Phoenix to use the most appropriate computational tools and provide quantitative, actionable results.
+Instead of asking vaguely about a molecule, specify what you need. For example, request specific ADMET properties, synthetic accessibility scores, solubility predictions, or toxicity data. This allows Edison Molecules to use the most appropriate computational tools and provide quantitative, actionable results.
 
 | Insufficient queries | More detailed queries |
 |---------------------|----------------------|
@@ -59,8 +59,8 @@ Instead of asking vaguely about a molecule, specify what you need. For example, 
 | Is aspirin drug-like? | Calculate the drug-likeness score (QED), synthetic accessibility score (SAscore), and Lipinski's Rule of Five violations for `CC(=O)OC1=CC=CC=C1C(=O)O`. |
 | What are the properties of caffeine? | Calculate the following properties for caffeine (SMILES: `CN1C=NC2=C1C(=O)N(C(=O)N2C)C`): (1) aqueous solubility (logS), (2) partition coefficient (logP), (3) polar surface area (PSA), and (4) number of rotatable bonds. |
 
-## 7. Ask actionable questions that leverage Phoenix's toolset.
-Frame queries that can be answered using Phoenix's computational capabilities rather than pure theoretical discussions without computational support. Phoenix excels at property prediction, synthesis planning, reaction analysis, database searches, and literature-enhanced discovery.
+## 7. Ask actionable questions that leverage Edison Molecules' toolset.
+Frame queries that can be answered using Edison Molecules' computational capabilities rather than pure theoretical discussions without computational support. Edison Molecules excels at property prediction, synthesis planning, reaction analysis, database searches, and literature-enhanced discovery.
 
 | Insufficient queries | More detailed queries |
 |---------------------|----------------------|
@@ -71,8 +71,8 @@ Frame queries that can be answered using Phoenix's computational capabilities ra
 
 
 ## 8. Iterate.
-Take some time to write your first Phoenix query so you can avoid the common pitfalls listed above. Starting with simpler queries will give you faster results and allow quicker iteration, helping you learn how to use Phoenix more effectively and get the most out of the system.
-Your first query does not have to be perfect. Use Phoenix interactively to refine your query:
+Take some time to write your first Edison Molecules query so you can avoid the common pitfalls listed above. Starting with simpler queries will give you faster results and allow quicker iteration, helping you learn how to use Edison Molecules more effectively and get the most out of the system.
+Your first query does not have to be perfect. Use Edison Molecules interactively to refine your query:
 
 1. Start simple
    - Begin with a well-known molecule or reaction and a small set of properties or a basic retrosynthesis.
@@ -85,5 +85,5 @@ Your first query does not have to be perfect. Use Phoenix interactively to refin
    - Example: "Now also calculate logS and propose modifications to improve solubility."
 
 4. Repeat
-   - Use the results of one Phoenix run as input for the next (e.g., take top hits and ask for safety assessments or optimization ideas).
-   - Phoenix also accepts follow-up questions to the previous run.
+   - Use the results of one Edison Molecules run as input for the next (e.g., take top hits and ask for safety assessments or optimization ideas).
+   - Edison Molecules also accepts follow-up questions to the previous run.
