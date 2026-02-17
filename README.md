@@ -73,13 +73,14 @@ In the Edison platform, we define the deployed combination of an agent and an en
 Aiming to make the submission of tasks as simple as possible, we have created a `JobNames` `enum` that contains the available task types.
 
 The available supported jobs are:
-| Alias | Task type | Description |
-| --- | --- | --- |
-| `JobNames.LITERATURE` | Literature Search | Ask a question of scientific data sources, and receive a high-accuracy, cited response. Built with [PaperQA3](https://github.com/Future-House/paper-qa). |
-| `JobNames.ANALYSIS` | Data Analysis | Turn biological datasets into detailed analyses answering your research questions. |
-| `JobNames.PRECEDENT` | Precedent Search | Formerly known as HasAnyone, query if anyone has ever done something in science. |
-| `JobNames.MOLECULES` | Chemistry Tasks | A new iteration of ChemCrow, Phoenix uses cheminformatics tools to do chemistry. Good for planning synthesis and designing new molecules.
-| `JobNames.DUMMY` | Dummy Task | This is a dummy task. Mainly for testing purposes. |
+
+| Alias                      | Available Aliases                                         | Task type         | Description                                                                                                                                              |
+| -------------------------- | --------------------------------------------------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `JobNames.LITERATURE`      | `literature-20260216`, `JobNames.CROW`, `JobNames.FALCON` | Literature Search | Ask a question of scientific data sources, and receive a high-accuracy, cited response. Built with [PaperQA3](https://github.com/Future-House/paper-qa). |
+| `JobNames.LITERATURE_HIGH` | `literature-high-20260216`                                | Literature Search | Ask a question of scientific data sources, and receive a high-accuracy, cited response. High reasoning mode enabled for SOTA performance.                |
+| `JobNames.ANALYSIS`        | `JobNames.FINCH`                                          | Data Analysis     | Turn biological datasets into detailed analyses answering your research questions.                                                                       |
+| `JobNames.PRECEDENT`       | `JobNames.OWL`                                            | Precedent Search  | Formerly known as HasAnyone, query if anyone has ever done something in science.                                                                         |
+| `JobNames.MOLECULES`       | `JobNames.PHOENIX`                                        | Chemistry Tasks   | A new iteration of ChemCrow, Phoenix uses cheminformatics tools to do chemistry. Good for planning synthesis and designing new molecules.                |
 
 Using `JobNames`, the task submission looks like this:
 
